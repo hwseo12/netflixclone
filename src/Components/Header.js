@@ -133,6 +133,7 @@ export function Header() {
     scrollY.onChange(() => {
       if (scrollY.get() > 80) {
         navAnimation.start("scroll");
+        console.log("scrollY.onChange", scrollY.get());
       } else {
         navAnimation.start("top");
       }
